@@ -2,13 +2,28 @@ import styles from '../styles/Home.module.css';
 
 function Home() {
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
+
+    // all
+    <div className={styles.main}>
+
+      {/* Home Page */}
+      <div className={styles.homeBar}>
+        <span>Barre</span>
+      </div>
+
+      <div className={styles.homePage}>
+        <div className={styles.homeLogo}>
+          <img src='Logo.png' alt='Logo' style={{width: '460px'}} />
+        </div>
+        <div className={styles.homeDescription}>
+          <span>Thsin Théra Sport</span>
+          <span>Intervention Non Médicamenteuse</span>
+          <span>"Corps & Esprit"</span>
+        </div>
+      </div>
+
     </div>
+
   );
 }
 
